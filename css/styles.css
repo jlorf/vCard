@@ -33,3 +33,30 @@ body {
 .vcard a:hover {
   text-decoration: underline;
 }
+
+.vcard a[href*="facebook.com"] i {
+  color: #3b5998; /* Color de Facebook */
+}
+
+.vcard a[href*="twitter.com"] i {
+  color: #1da1f2; /* Color de Twitter */
+}
+
+.vcard a[href*="instagram.com"] i {
+  color: #C13584; /* Color de Instagram */
+}
+
+.vcard a[href*="wa.me"] i {
+  color: #25D366; /* Color de WhatsApp */
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 10px;
+}
