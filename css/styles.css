@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.vcard {
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.vcard h1 {
+  text-align: center;
+  color: #333;
+}
+
+.vcard p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.vcard a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.vcard a:hover {
+  text-decoration: underline;
+}
