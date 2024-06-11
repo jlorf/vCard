@@ -53,6 +53,18 @@ body {
   color: #25D366; /* Color de WhatsApp */
 }
 
+.vcard a[href*="x.com"] i {
+  color: #000000; /* Color de X, reemplaza #FF0000 con el color de marca correcto */
+}
+
+.vcard a[href*="github.com"] i {
+  color: #181717; /* Color de GitHub */
+}
+
+.vcard a[href*="linkedin.com"] i {
+  color: #0A66C2; /* Color de LinkedIn */
+}
+
 .social-links {
   display: flex;
   flex-wrap: wrap;
