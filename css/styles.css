@@ -5,14 +5,17 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #000;
 }
 
 .vcard {
   max-width: 500px;
   padding: 20px;
-  background-color: #fff;
+  /*background-color: #fff;*/
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+  background: linear-gradient(to right, #f5f4f4, #464646);
+  color: #fff;
+  border-radius: 8%;
 }
 
 .vcard h1 {
