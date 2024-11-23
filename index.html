@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script>
+    function loadVCF() {
+        fetch('./joel_lorenzo.vcf')
+            .then(response => response.text())
+            .then(data => {
+                const base64Data = btoa(data);
+                const vcfLink = document.getElementById('vcf-link');
+                vcfLink.href = `data:text/vcard;base64,${base64Data}`;
+                vcfLink.target = '_blank';
+            })
+            .catch(error => console.error('Error loading VCF file:', error));
+    }
+
+    window.onload = loadVCF;
+</script>
 </head>
 
 <body>
@@ -29,6 +44,8 @@
       <a href="https://www.twitter.com/jlorf7"><i class="fab fa-twitter-square"></i></a>
       <a href="https://www.x.com/jlorf7"><i class="fa-brands fa-square-x-twitter"></i></a>
       <!-- <a href="https://www.instagram.com/usuario"><i class="fab fa-instagram-square"></i></a> -->
+      <!-- <a href="./joel_lorenzo.vcf" download><i class="fas fa-address-card"></i></a> -->
+      <a id="vcf-link"><i class="fas fa-address-card"></i></a>
     </div>
 </div>
 </body>

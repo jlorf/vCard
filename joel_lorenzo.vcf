@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Joel Lorenzo
+N:Lorenzo;Joel;;;
+ORG:CompsaOnline S.L.;Programacio
+TITLE:Developer
+ADR;TYPE=WORK:;;Dr. Fleming 57-59;Balaguer;Lleida;25600;Espanya
+URL;TYPE=WORK:https://www.compsaonline.com/
+EMAIL:jlorenzofresneda@outlook.es
+TEL;TYPE=CELL:+34 674 418 061
+END:VCARD
