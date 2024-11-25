@@ -16,8 +16,11 @@
             .then(data => {
                 const base64Data = btoa(data);
                 const vcfLink = document.getElementById('vcf-link');
-                vcfLink.href = `data:text/vcard;base64,${base64Data}`;
-                vcfLink.target = '_blank';
+                // Usar el tipo MIME específico para vCard
+                vcfLink.href = `data:text/x-vcard;base64,${base64Data}`;
+                // Eliminar target='_blank' y download si existe
+                vcfLink.removeAttribute('target');
+                vcfLink.removeAttribute('download');
             })
             .catch(error => console.error('Error loading VCF file:', error));
     }
